@@ -1,0 +1,25 @@
+* {
+  font-family: monospace;
+  font-size: 15;
+  background-color: #222;
+  color: #fff;
+}
+
+body {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  text-align: center;
+}
+h1 {
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+}

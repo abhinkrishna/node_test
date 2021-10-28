@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.use(express.static('public'));
+
+app.get('/api', (req, res) => {
     res.json({
         status: 200,
         statusMessage: 'OK',
-        message: 'Server running successfully.'
+        message: 'server running successfully'
     });
 })
 
