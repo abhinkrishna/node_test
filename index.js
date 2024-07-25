@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = 3000
 
 app.use(express.static('public'));
 
@@ -11,4 +12,4 @@ app.get('/api', (req, res) => {
     });
 })
 
-app.listen(4000, () => console.log('server running on port 4000'));
+app.listen(PORT, () => console.log(`server running on port ${PORT}`));
